@@ -1,5 +1,3 @@
-
-
 const apiKey = "P2UWZJT7M635N9HTMKU69NYXG";
 const location = "Hyderabad,India";
 let weatherData;
@@ -26,4 +24,4 @@ await fetch(url)
 
 console.log(weatherData);
 
-export { weatherData };
+export { weatherData, url };
