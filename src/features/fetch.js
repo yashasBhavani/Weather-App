@@ -1,3 +1,5 @@
+
+
 const apiKey = "P2UWZJT7M635N9HTMKU69NYXG";
 const location = "Hyderabad,India";
 let weatherData;
@@ -13,16 +15,15 @@ await fetch(url)
   .then((data) => {
     console.log(data);
     weatherData = {
-        address : data.address,
-        resolvedAddress : data.resolvedAddress,
-        timezone : data.timezone,
-        description : data.description,
-        currentTemp : data.currentConditions.temp,
-
+      address: data.address,
+      resolvedAddress: data.resolvedAddress,
+      timezone: data.timezone,
+      description: data.description,
+      currentTemp: data.currentConditions.temp,
     };
   })
   .catch((error) => console.error("Error fetching weather:", error));
 
-  console.log(weatherData);
+console.log(weatherData);
 
-  export {weatherData};
+export { weatherData };

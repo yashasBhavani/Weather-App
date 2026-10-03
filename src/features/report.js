@@ -1,7 +1,8 @@
 import { weatherData } from "./fetch.js";
 
 document.querySelector(".address").innerText = weatherData.address;
- document.querySelector(".resolvedAddress").innerText = weatherData.resolvedAddress;
+document.querySelector(".resolvedAddress").innerText =
+  weatherData.resolvedAddress;
 document.querySelector(".timezone").innerText = weatherData.timezone;
- document.querySelector(".description").innerText = weatherData.description;
+document.querySelector(".description").innerText = weatherData.description;
 document.querySelector(".temp").innerText = weatherData.currentTemp;

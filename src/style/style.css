@@ -1,11 +1,12 @@
 body {
-    background-color: rgb(111, 217, 244);
+  background-color: rgb(111, 217, 244);
 }
 
 .content {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 h1 {
-    background-color: yellow;
+  background-color: yellow;
 }
+
