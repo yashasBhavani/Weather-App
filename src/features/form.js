@@ -1,5 +1,5 @@
-import { url } from "./fetch.js";
 import { weatherData } from "./fetch.js";
+import { getWeather } from "./updateReport.js";
 
 const locationInput = document.querySelector("#location");
 const locationButton = document.querySelector(".locationButton");
@@ -22,7 +22,10 @@ exitButton.addEventListener("click", (e) => {
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   dialogBox.close();
+  getWeather(inputValue);
+  inputValue = "";
 });
+
 let itsFarenhiet = true;
 let itsCelsius = false;
 

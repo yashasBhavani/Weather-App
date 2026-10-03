@@ -24,4 +24,4 @@ await fetch(url)
 
 console.log(weatherData);
 
-export { weatherData, url };
+export { weatherData, url ,apiKey};
