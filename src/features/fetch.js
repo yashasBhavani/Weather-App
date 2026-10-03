@@ -1,5 +1,5 @@
 const apiKey = "P2UWZJT7M635N9HTMKU69NYXG";
-const location = "London,UK";
+const location = "Hyderabad,India";
 let weatherData;
 
 // Correct endpoint and parameter
@@ -15,7 +15,7 @@ await fetch(url)
     weatherData = {
         address : data.address,
         resolvedAddress : data.resolvedAddress,
-        timezone : data.timeZone,
+        timezone : data.timezone,
         description : data.description,
         currentTemp : data.currentConditions.temp,
 
@@ -24,3 +24,5 @@ await fetch(url)
   .catch((error) => console.error("Error fetching weather:", error));
 
   console.log(weatherData);
+
+  export {weatherData};
