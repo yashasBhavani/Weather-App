@@ -4,7 +4,7 @@ A dynamic, real-time weather dashboard built with JavaScript. This application f
 
 Built as part of the curriculum for The Odin Project, this project focuses heavily on asynchronous JavaScript, working with JSON data, and organizing code into modular components.
 🚀 Live Preview
-
+(Currently working on it)
 View Live Demo Here
 ✨ Features
 
