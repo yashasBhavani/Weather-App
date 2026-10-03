@@ -1,4 +1,5 @@
 import "./style/style.css";
-import { aSmallTest } from "./features/fetch.js";
+import "./features/fetch.js";
 
-console.log(aSmallTest);
+//import {  } from "./features/fetch.js';
+
