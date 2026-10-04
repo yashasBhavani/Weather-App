@@ -34,10 +34,10 @@ convertTempBtn.addEventListener("click", (e) => {
 
   if (itsFarenhiet) {
     tempInCelsius = (tempInFarenheit - 32) * (5 / 9);
-    document.querySelector(".temp").innerText = tempInCelsius.toFixed(1);
+    document.querySelector(".temp").innerText = `${tempInCelsius.toFixed(1)} °C`;
     itsFarenhiet = false;
   } else {
-    document.querySelector(".temp").innerText = tempInFarenheit.toFixed(1);
+    document.querySelector(".temp").innerText = `${tempInFarenheit.toFixed(1)} °F`;
     itsFarenhiet = true;
   }
 });

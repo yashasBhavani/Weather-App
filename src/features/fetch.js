@@ -1,3 +1,5 @@
+import { getWeather } from "./updateReport.js";
+
 const apiKey = "P2UWZJT7M635N9HTMKU69NYXG";
 const location = "Hyderabad,India";
 let weatherData;
@@ -21,6 +23,6 @@ await fetch(url)
   })
   .catch((error) => console.error("Error fetching weather:", error));
 
-console.log(weatherData);
+getWeather("Hyderabad")
 
 export { weatherData, url, apiKey };
