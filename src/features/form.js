@@ -1,4 +1,3 @@
-import { weatherData } from "./fetch.js";
 import { getWeather } from "./updateReport.js";
 
 const locationInput = document.querySelector("#location");
@@ -18,27 +17,27 @@ exitButton.addEventListener("click", (e) => {
   dialogBox.close();
 });
 
-submitButton.addEventListener("click", (e) => {
-  getWeather(locationInput.value);
+let itsFarenhiet = true;
+
+let tempInCelsius;
+let tempInFarenheit = await getWeather(locationInput.value);
+
+submitButton.addEventListener("click", async (e) => {
+  getWeather(locationInput.value.trim());
+  tempInFarenheit = await getWeather(locationInput.value.trim());
   e.preventDefault();
   dialogBox.close();
 });
 
-let itsFarenhiet = true;
-let itsCelsius = false;
-
 convertTempBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  let displayedTemp = weatherData.currentTemp;
 
   if (itsFarenhiet) {
-    displayedTemp = (displayedTemp - 32) * (5 / 9);
-    document.querySelector(".temp").innerText = displayedTemp;
+    tempInCelsius = (tempInFarenheit - 32) * (5 / 9);
+    document.querySelector(".temp").innerText = tempInCelsius;
     itsFarenhiet = false;
-    itsCelsius = true;
-  } else if (itsCelsius) {
-    document.querySelector(".temp").innerText = weatherData.currentTemp;
+  } else {
+    document.querySelector(".temp").innerText = tempInFarenheit;
     itsFarenhiet = true;
-    itsCelsius = false;
   }
 });

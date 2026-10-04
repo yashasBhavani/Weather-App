@@ -13,6 +13,8 @@ async function getWeather(place) {
     document.querySelector(".timezone").innerText = data.timezone;
     document.querySelector(".description").innerText = data.description;
     document.querySelector(".temp").innerText = data.currentConditions.temp;
+
+    return data.currentConditions.temp;
   } catch (error) {
     console.error(`Error is while requesting ${error}`);
   }

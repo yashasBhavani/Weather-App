@@ -2,7 +2,6 @@ const apiKey = "P2UWZJT7M635N9HTMKU69NYXG";
 const location = "Hyderabad,India";
 let weatherData;
 
-// Correct endpoint and parameter
 const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`;
 
 await fetch(url)
