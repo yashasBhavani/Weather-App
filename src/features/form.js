@@ -7,7 +7,6 @@ const dialogBox = document.querySelector("#dialogBox");
 const exitButton = document.querySelector(".exit");
 const submitButton = document.querySelector(".submit");
 const convertTempBtn = document.querySelector(".tempToggleBtn");
-let inputValue = locationInput.value;
 
 locationButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -20,10 +19,9 @@ exitButton.addEventListener("click", (e) => {
 });
 
 submitButton.addEventListener("click", (e) => {
+  getWeather(locationInput.value);
   e.preventDefault();
   dialogBox.close();
-  getWeather(inputValue);
-  inputValue = "";
 });
 
 let itsFarenhiet = true;

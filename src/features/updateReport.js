@@ -1,7 +1,8 @@
 import { apiKey } from "./fetch.js";
 
-async function getWeather(location) {
-  let link = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=${apiKey}`;
+async function getWeather(place) {
+  let link =
+    await `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?key=${apiKey}`;
 
   try {
     let response = await fetch(link);
@@ -17,4 +18,4 @@ async function getWeather(location) {
   }
 }
 
-export {getWeather};
+export { getWeather };
