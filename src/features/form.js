@@ -24,10 +24,14 @@ let tempInCelsius;
 let tempInFarenheit = await getWeather(locationInput.value);
 
 submitButton.addEventListener("click", async (e) => {
-  tempInFarenheit = await getWeather(locationInput.value.trim());
+  if (locationInput.value.trim() === "") {alert('Please enter a name of a city or country')}
+  else {
+    tempInFarenheit = await getWeather(locationInput.value.trim());
   document.querySelector(".temp").innerText = `${tempInFarenheit.toFixed(1)} °F`;
   e.preventDefault();
   dialogBox.close();
+  }
+  
 });
 
 convertTempBtn.addEventListener("click", (e) => {

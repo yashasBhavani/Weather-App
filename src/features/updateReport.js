@@ -12,7 +12,7 @@ async function getWeather(place) {
     document.querySelector(".address").innerText = data.address;
     document.querySelector(".timezone").innerText = data.timezone;
     document.querySelector(".description").innerText = data.description;
-    document.querySelector(".temp").innerText = data.currentConditions.temp;
+    document.querySelector(".temp").innerText = `${data.currentConditions.temp}℉`;
 
     return data.currentConditions.temp;
   } catch (error) {
