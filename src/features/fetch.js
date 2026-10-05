@@ -23,6 +23,6 @@ await fetch(url)
   })
   .catch((error) => console.error("Error fetching weather:", error));
 
-getWeather("Hyderabad")
+
 
 export { weatherData, url, apiKey };

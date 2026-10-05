@@ -6,6 +6,7 @@ const dialogBox = document.querySelector("#dialogBox");
 const exitButton = document.querySelector(".exit");
 const submitButton = document.querySelector(".submit");
 const convertTempBtn = document.querySelector(".tempToggleBtn");
+if (locationInput.value === null) {locationInput.value = "hyderabad"};
 
 locationButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -23,8 +24,8 @@ let tempInCelsius;
 let tempInFarenheit = await getWeather(locationInput.value);
 
 submitButton.addEventListener("click", async (e) => {
-  getWeather(locationInput.value.trim());
   tempInFarenheit = await getWeather(locationInput.value.trim());
+  document.querySelector(".temp").innerText = `${tempInFarenheit.toFixed(1)} °F`;
   e.preventDefault();
   dialogBox.close();
 });
