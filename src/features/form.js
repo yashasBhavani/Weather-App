@@ -6,7 +6,9 @@ const dialogBox = document.querySelector("#dialogBox");
 const exitButton = document.querySelector(".exit");
 const submitButton = document.querySelector(".submit");
 const convertTempBtn = document.querySelector(".tempToggleBtn");
-if (locationInput.value === null) {locationInput.value = "hyderabad"};
+if (locationInput.value === null) {
+  locationInput.value = "hyderabad";
+}
 
 locationButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -24,14 +26,15 @@ let tempInCelsius;
 let tempInFarenheit = await getWeather(locationInput.value);
 
 submitButton.addEventListener("click", async (e) => {
-  if (locationInput.value.trim() === "") {alert('Please enter a name of a city or country')}
-  else {
+  if (locationInput.value.trim() === "") {
+    alert("Please enter a name of a city or country");
+  } else {
     tempInFarenheit = await getWeather(locationInput.value.trim());
-  document.querySelector(".temp").innerText = `${tempInFarenheit.toFixed(1)} °F`;
-  e.preventDefault();
-  dialogBox.close();
+    document.querySelector(".temp").innerText =
+      `${tempInFarenheit.toFixed(1)} °F`;
+    e.preventDefault();
+    dialogBox.close();
   }
-  
 });
 
 convertTempBtn.addEventListener("click", (e) => {
@@ -39,10 +42,12 @@ convertTempBtn.addEventListener("click", (e) => {
 
   if (itsFarenhiet) {
     tempInCelsius = (tempInFarenheit - 32) * (5 / 9);
-    document.querySelector(".temp").innerText = `${tempInCelsius.toFixed(1)} °C`;
+    document.querySelector(".temp").innerText =
+      `${tempInCelsius.toFixed(1)} °C`;
     itsFarenhiet = false;
   } else {
-    document.querySelector(".temp").innerText = `${tempInFarenheit.toFixed(1)} °F`;
+    document.querySelector(".temp").innerText =
+      `${tempInFarenheit.toFixed(1)} °F`;
     itsFarenhiet = true;
   }
 });

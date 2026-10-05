@@ -1,19 +1,18 @@
-
 :root {
-  --bg-color: #a6f0ad;       /* Soft mint background */
-  --card-bg: #f0dede;        /* White card */
-  --primary-green: #2e7d32;  /* Deep green for branding/buttons */
-  --primary-hover: #1b5e20;  /* Darker green for hover */
-  --text-main: #1f3320;      /* Dark green-grey for readable text */
-  --text-muted: #4a664c;     /* Lighter text for secondary info */
-  --accent-green: #a5d6a7;   /* Light green for borders */
+  --bg-color: #a6f0ad; /* Soft mint background */
+  --card-bg: #f0dede; /* White card */
+  --primary-green: #2e7d32; /* Deep green for branding/buttons */
+  --primary-hover: #1b5e20; /* Darker green for hover */
+  --text-main: #1f3320; /* Dark green-grey for readable text */
+  --text-muted: #4a664c; /* Lighter text for secondary info */
+  --accent-green: #a5d6a7; /* Light green for borders */
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -25,7 +24,6 @@ body {
   min-height: 100vh;
   padding: 2rem;
 }
-
 
 nav {
   width: 100%;
@@ -42,7 +40,6 @@ header {
   box-shadow: 0 4px 6px rgba(46, 125, 50, 0.08);
 }
 
-
 button {
   background-color: var(--primary-green);
   color: white;
@@ -52,7 +49,9 @@ button {
   cursor: pointer;
   font-weight: 600;
   text-transform: capitalize;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
 }
 
 button:hover {
@@ -62,7 +61,6 @@ button:hover {
 button:active {
   transform: scale(0.97);
 }
-
 
 .content {
   background-color: var(--card-bg);
@@ -88,7 +86,6 @@ ul {
   gap: 0.8rem;
 }
 
-
 .temp {
   font-size: 4.5rem;
   font-weight: bold;
@@ -102,13 +99,13 @@ ul {
   color: var(--text-muted);
 }
 
-.description, .timezone {
-  font-size: 1rem;
+.description,
+.timezone {
+  font-size: 1.4rem;
   color: var(--text-muted);
   text-transform: capitalize;
   font-weight: 600;
 }
-
 
 dialog {
   margin: auto;
@@ -151,7 +148,6 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: var(--primary-green);
 }
-
 
 .button {
   display: flex;
