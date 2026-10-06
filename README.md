@@ -1,79 +1,93 @@
-Weather App 🌤️
+Weather Forecast
 
-A dynamic, real-time weather dashboard built with JavaScript. This application fetches live meteorological data from a third-party weather API and dynamically updates the DOM to display current conditions, forecasts, and location-specific data.
+A dynamic weather application that provides real-time forecasts and meteorological data. This project fetches live data using the Visual Crossing Weather API and bundles modules efficiently using Webpack.
 
-Built as part of the curriculum for The Odin Project, this project focuses heavily on asynchronous JavaScript, working with JSON data, and organizing code into modular components.
-🚀 Live Preview
-(Currently working on it)
-View Live Demo Here
-✨ Features
+Live Demo Weather Forecast
 
-    Real-time Data: Fetches current weather conditions (temperature, humidity, wind speed, etc.) for any searched city.
+A dynamic weather application that provides real-time forecasts and meteorological data. This project fetches live data using the Visual Crossing Weather API and bundles modules efficiently using Webpack.
 
-    Dynamic DOM Manipulation: Updates the UI instantly based on the retrieved API data without reloading the page.
+Live Demo Weather Forecast
 
-    Unit Toggle: Easily switch between Celsius and Fahrenheit.
+A dynamic weather application that provides real-time forecasts and meteorological data. This project fetches live data using the Visual Crossing Weather API and bundles modules efficiently using Webpack.
 
-    Error Handling: Gracefully handles invalid location searches and network errors.
+Live Demo Weather Forecast
 
-    Responsive Design: Optimized for both desktop and mobile viewing.
+A dynamic weather application that provides real-time forecasts and meteorological data. This project fetches live data using the Visual Crossing Weather API and bundles modules efficiently using Webpack.
 
-🛠️ Built With
+Live Demo https://yashasbhavani.github.io/Weather-App/
+Features
 
-    HTML5 & CSS3
+    Real-Time Weather: Get current temperature, humidity, and conditions for any global location.
 
-    JavaScript (ES6+) - Heavily utilizing async / await and Promises.
+    Forecast Data: View upcoming weather patterns and daily breakdowns.
 
-    Webpack - For bundling JavaScript modules and assets.
+    Dynamic UI: Interface updates automatically based on search queries and fetched data.
 
-    ESLint & Prettier - Maintaining clean, consistent code formatting.
+    Optimized Build: JavaScript and assets are bundled using Webpack for performance.
 
-    [Insert API Name, e.g., WeatherAPI / OpenWeatherMap] - Providing the weather data.
+Technologies Used
 
-🧠 What I Learned
+    Frontend: HTML5, CSS3, Vanilla JavaScript
 
-Building this project solidified my understanding of several core web development concepts:
+    Build Tools: Webpack, Babel, ESLint, Prettier
 
-    Asynchronous JavaScript: Managing API calls using fetch, async, and await to ensure the application remains responsive while waiting for network requests.
+    API: Visual Crossing Weather API
 
-    API Integration: Reading API documentation, parsing JSON responses, and extracting specific data points safely.
+    Deployment: GitHub Pages
+Features
 
-    Modular Code Structure: Moving away from a single massive JavaScript file and organizing logic into distinct, importable modules using Webpack.
+    Real-Time Weather: Get current temperature, humidity, and conditions for any global location.
 
-    Environment Variables: Keeping sensitive API keys secure and out of the main source code.
+    Forecast Data: View upcoming weather patterns and daily breakdowns.
 
-💻 Local Installation
+    Dynamic UI: Interface updates automatically based on search queries and fetched data.
 
-To run this project locally on your machine, follow these steps:
+    Optimized Build: JavaScript and assets are bundled using Webpack for performance.
 
-    Clone the repository:
-    Bash
+Technologies Used
 
-    git clone https://github.com/YourUsername/your-repo-name.git
+    Frontend: HTML5, CSS3, Vanilla JavaScript
 
-    Navigate to the project directory:
-    Bash
+    Build Tools: Webpack, Babel, ESLint, Prettier
 
-    cd your-repo-name
+    API: Visual Crossing Weather API
 
-    Install dependencies:
-    Bash
+    Deployment: GitHub Page
+Features
 
-    npm install
+    Real-Time Weather: Get current temperature, humidity, and conditions for any global location.
 
-    Set up your API Key:
+    Forecast Data: View upcoming weather patterns and daily breakdowns.
 
-        Create a .env file in the root directory.
+    Dynamic UI: Interface updates automatically based on search queries and fetched data.
 
-        Add your API key: API_KEY=your_api_key_here
+    Optimized Build: JavaScript and assets are bundled using Webpack for performance.
 
-    Build the project / Start the dev server:
-    Bash
+Technologies Used
 
-    npm run build
-    # OR if you have a dev server configured:
-    npm run start
+    Frontend: HTML5, CSS3, Vanilla JavaScript
 
-🤝 Contributing
+    Build Tools: Webpack, Babel, ESLint, Prettier
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+    API: Visual Crossing Weather API
+
+    Deployment: GitHub Page
+Features
+
+    Real-Time Weather: Get current temperature, humidity, and conditions for any global location.
+
+    Forecast Data: View upcoming weather patterns and daily breakdowns.
+
+    Dynamic UI: Interface updates automatically based on search queries and fetched data.
+
+    Optimized Build: JavaScript and assets are bundled using Webpack for performance.
+
+Technologies Used
+
+    Frontend: HTML5, CSS3, Vanilla JavaScript
+
+    Build Tools: Webpack, Babel, ESLint, Prettier
+
+    API: Visual Crossing Weather API
+
+    Deployment: GitHub Pages
