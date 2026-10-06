@@ -4,7 +4,9 @@ A dynamic weather application that provides real-time forecasts and meteorologic
 
 Live Demo https://yashasbhavani.github.io/Weather-App/
 
-
+Using Website
+1) The convert button in website is to toggle convert Farenheit to Celsius and vise versa
+2) On clicking , location button in dialog box you can type any city or country of your choice
 
 Features
 
